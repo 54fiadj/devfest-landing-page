@@ -19,8 +19,122 @@ body {
 .devfest-title .devfest-anim {
   margin: 0 -1000px;
   position: relative;
-  left: 25px;
+  left: 40px;
+  margin-bottom: 72px;
+
+  display: flex;
 }
+
+.devfest-anim .puzzle1 {
+  margin-top: -250px;
+  margin-right: -14px;
+
+  animation: puzzle1 6s infinite linear;
+  animation-timing-function: ease-in-out;
+}
+
+.devfest-anim .puzzle2 {
+  margin-bottom: -200px;
+  margin-left: -14px;
+  
+  animation: puzzle2 6s infinite linear;
+  animation-timing-function: ease-in-out;
+}
+
+
+.devfest-anim .title-container {
+  overflow: hidden;
+  width: 511.662px;
+  height: 211.147px;
+  animation: title-container 6s infinite linear;
+  animation-timing-function: ease-in-out;
+}
+
+.devfest-anim .title {
+  animation: title 6s infinite linear;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes puzzle1 {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(280px);
+  }
+  55% {
+    transform: translateX(280px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes puzzle2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-290px, 0);
+  }
+  55% {
+    transform: translate(-290px, -210px);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes title-container {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-290px);
+  }
+  55% {
+    transform: translateX(-290px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes title {
+  0% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+  33% {
+    transform: translateX(560px);
+    opacity: 0%;
+  }
+  55% {
+    transform: translateX(560px);
+    opacity: 0%;
+  }
+  80% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
+
+
 
 .date-location {
   display: flex;
