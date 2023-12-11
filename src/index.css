@@ -232,3 +232,185 @@ body {
     transform: rotate(0deg);
   }
 }
+
+
+.mob {display: none;}
+.desk {display: initial;}
+
+@media (max-width: 1120px) {
+  .mob {display: initial;}
+  .desk {display: none;}
+
+  
+.devfest-title {
+  margin-inline: 5vw;
+}
+
+.devfest-title .devfest-anim {
+  margin: 0 -1000px;
+  margin-bottom: 72px;
+
+  left: 0;
+}
+
+.devfest-anim .puzzle1 {
+  margin-top: -45px;
+  margin-right: -7px;
+
+  width: 57px;
+  height: 59px;
+}
+
+.devfest-anim .puzzle2 {
+  position: relative;
+  top: 65px;
+  margin-left: -6px;
+
+  width: 50px;
+  height: 52px;
+}
+
+.devfest-anim .title-container, .devfest-anim .title {
+  width: 224px;
+  height: 93px;
+}
+
+
+@keyframes puzzle1 {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(140px);
+  }
+  55% {
+    transform: translateX(140px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes puzzle2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-120px, 0);
+  }
+  55% {
+    transform: translate(-120px, -100px);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes title-container {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-120px);
+  }
+  55% {
+    transform: translateX(-120px);
+  }
+  80% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes title {
+  0% {
+    transform: translateX(0);
+    opacity: 100%;
+  }
+  33% {
+    transform: translateX(240px);
+    opacity: 0%;
+  }
+  55% {
+    transform: translateX(240px);
+    opacity: 0%;
+  }
+  80% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
+
+  .date-location img {
+    height: 19px;
+    width: auto;
+  }
+
+.date-location {
+  gap: 40px;
+  font-size: 12px;
+}
+
+.date-location .date, .date-location .location {
+  gap: 4px;
+}
+
+.countdown {
+  margin-top: 25px;
+  margin-left: 0px;
+}
+
+.box {
+  overflow: hidden;
+  height: 55px;
+  width: 71px;
+}
+
+.box img {
+  width: 71px;
+}
+
+.box .remaining {
+  gap: 4px;
+  font-size: 14px;
+}
+
+.box .remaining .number {
+  font-size: 24px;
+}
+
+.register-button .container {
+  width: 231px;
+  height: 47px;
+}
+
+.register-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-button {
+  margin-top: 55px;
+}
+
+.register-button .container div {
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+
+}

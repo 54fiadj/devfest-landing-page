@@ -36,7 +36,7 @@ const Countdown = ({ targetDate }) => {
   return (
     <div>
       <div className='countdown'>
-        <img className='arrow' src={arrow} alt="" />
+        <img className='arrow desk' src={arrow} alt="" />
         <div className='box'>
           <img src={daysBox} alt="" />
           <div className='remaining'>
