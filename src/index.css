@@ -1,8 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/product-sans');           
+
 * {
   font-family: Product Sans;
 }
 
-@import url('https://egkoppel.github.io/product-sans/google-fonts.css');                
 
 body {
   margin: 0;
@@ -237,6 +238,8 @@ body {
 .mob {display: none;}
 .desk {display: initial;}
 
+
+
 @media (max-width: 1120px) {
   .mob {display: initial;}
   .desk {display: none;}
@@ -250,7 +253,7 @@ body {
   margin: 0 -1000px;
   margin-bottom: 72px;
 
-  left: 0;
+  left: 16px;
 }
 
 .devfest-anim .puzzle1 {
@@ -360,7 +363,9 @@ body {
   }
 
 .date-location {
-  gap: 40px;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-inline: 10px;
   font-size: 12px;
 }
 
@@ -370,7 +375,10 @@ body {
 
 .countdown {
   margin-top: 25px;
-  margin-left: 0px;
+  margin-inline: 10px;
+  justify-content: space-evenly;
+  gap: 10px;
+
 }
 
 .box {
@@ -384,7 +392,8 @@ body {
 }
 
 .box .remaining {
-  gap: 4px;
+  justify-content: space-evenly;
+  gap: 0;
   font-size: 14px;
 }
 
@@ -412,5 +421,15 @@ body {
   margin-top: 0px;
 }
 
+}
+
+@media (max-width: 350px) {
+
+  .date-location .date, .date-location .location {
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+  }
 
 }
